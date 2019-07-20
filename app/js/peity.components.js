@@ -251,9 +251,7 @@ class DonutElement extends PieElement {
   }
 }
 
-// As with the pie and donut simply being to variations of the same custom
-// element, there's a good chance these two will lead to only one
-// implementation.
+// TODO: This component is only partially implemented. I've never gone back to finish all the d3 stuff.
 class LineElement extends BaseElement {
   constructor() {
     super();
@@ -421,9 +419,3 @@ customElements.define('wc-pie', PieElement);
 customElements.define('wc-donut', DonutElement);
 customElements.define('wc-line', LineElement);
 customElements.define('wc-bar', BarElement);
-
-window.addEventListener('WebComponentsReady', function(e) {
-  // This is just testing the function the WebComponents polyfill provides. It
-  // gets called at the same point whether it polyfilled anything or not.
-  console.log('Components are ready');
-});
