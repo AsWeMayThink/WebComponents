@@ -1,73 +1,141 @@
 import { document, console } from 'global';
 import { storiesOf } from '@storybook/html';
 
-import '../app/js/peity.components';
+import '../app/js/vanilla-peity.components';
+import '../app/js/litelement-peity.components';
 
 storiesOf('Peity', module)
   .add(
-    'Pie Charts',
+    'Vanilla Pie Charts',
     () => /* html */ `
     <h2>Pie Charts</h2>
 
     <div>
-      <wc-pie>1/5</wc-pie>
-      <wc-pie>226/360</wc-pie>
-      <wc-pie>0.52/1.561</wc-pie>
-      <wc-pie>1,4</wc-pie>
-      <wc-pie>226,134</wc-pie>
-      <wc-pie>0.52,1.041</wc-pie>
-      <wc-pie>1,2,3,2,2</wc-pie>
+      <vanilla-pie>1/5</vanilla-pie>
+      <vanilla-pie>226/360</vanilla-pie>
+      <vanilla-pie>0.52/1.561</vanilla-pie>
+      <vanilla-pie>1,4</vanilla-pie>
+      <vanilla-pie>226,134</vanilla-pie>
+      <vanilla-pie>0.52,1.041</vanilla-pie>
+      <vanilla-pie>1,2,3,2,2</vanilla-pie>
     </div>`
   )
   .add(
-    'Donut Charts',
+    'Vanilla Donut Charts',
     () => /* html */ `
     <h2>Donut Charts</h2>
 
     <div>
-      <wc-donut>1/5</wc-donut>
-      <wc-donut>226/360</wc-donut>
-      <wc-donut>0.52/1.561</wc-donut>
-      <wc-donut>1,4</wc-donut>
-      <wc-donut>226,134</wc-donut>
-      <wc-donut>0.52,1.041</wc-donut>
-      <wc-donut>1,2,3,2,2</wc-donut>
+      <vanilla-donut>1/5</vanilla-donut>
+      <vanilla-donut>226/360</vanilla-donut>
+      <vanilla-donut>0.52/1.561</vanilla-donut>
+      <vanilla-donut>1,4</vanilla-donut>
+      <vanilla-donut>226,134</vanilla-donut>
+      <vanilla-donut>0.52,1.041</vanilla-donut>
+      <vanilla-donut>1,2,3,2,2</vanilla-donut>
     </div>`
   )
   .add(
-    'Line Charts',
+    'Vanilla Line Charts',
     () => /* html */ `
     <h2>Line Charts</h2>
 
     <div>
-      <wc-line>5,3,9,6,5,9,7,3,5,2</wc-line>
-      <wc-line>5,3,2,-1,-3,-2,2,3,5,2</wc-line>
-      <wc-line>0,-3,-6,-4,-5,-4,-7,-3,-5,-2</wc-line>
+      <vanilla-line>5,3,9,6,5,9,7,3,5,2</vanilla-line>
+      <vanilla-line>5,3,2,-1,-3,-2,2,3,5,2</vanilla-line>
+      <vanilla-line>0,-3,-6,-4,-5,-4,-7,-3,-5,-2</vanilla-line>
     </div>`
   )
   .add(
-    'Bar Charts',
+    'Vanilla Bar Charts',
     () => /* html */ `
     <h2>Bar Charts</h2>
 
     <div>
-      <wc-bar>5,3,9,6,5,9,7,3,5,2</wc-bar>
-      <wc-bar>5,3,2,-1,-3,-2,2,3,5,2</wc-bar>
-      <wc-bar>0,-3,-6,-4,-5,-4,-7,-3,-5,-2</wc-bar>
+      <vanilla-bar>5,3,9,6,5,9,7,3,5,2</vanilla-bar>
+      <vanilla-bar>5,3,2,-1,-3,-2,2,3,5,2</vanilla-bar>
+      <vanilla-bar>0,-3,-6,-4,-5,-4,-7,-3,-5,-2</vanilla-bar>
     </div>`
   )
   .add(
-    'Attributes',
+    'Vanilla Attributes',
     () => /* html */ `
     <h2>Attributes</h2>
 
     <div>
-      <wc-donut fill='["red", "#eeeeee"]' inner-radius="10" radius="40">1/7</wc-donut>
-      <wc-donut fill='["orange", "#eeeeee"]' inner-radius="14" radius="36">2/7</wc-donut>
-      <wc-donut fill='["yellow", "#eeeeee"]' inner-radius="16" radius="32">3/7</wc-donut>
-      <wc-donut fill='["green", "#eeeeee"]' inner-radius="18" radius="28">4/7</wc-donut>
-      <wc-donut fill='["blue", "#eeeeee"]' inner-radius="20" radius="24">5/7</wc-donut>
-      <wc-donut fill='["indigo", "#eeeeee"]' inner-radius="18" radius="20">6/7</wc-donut>
-      <wc-donut fill='["violet", "#eeeeee"]' inner-radius="15" radius="16">7/7</wc-donut>
+      <vanilla-donut fill='["red", "#eeeeee"]' inner-radius="10" radius="40">1/7</vanilla-donut>
+      <vanilla-donut fill='["orange", "#eeeeee"]' inner-radius="14" radius="36">2/7</vanilla-donut>
+      <vanilla-donut fill='["yellow", "#eeeeee"]' inner-radius="16" radius="32">3/7</vanilla-donut>
+      <vanilla-donut fill='["green", "#eeeeee"]' inner-radius="18" radius="28">4/7</vanilla-donut>
+      <vanilla-donut fill='["blue", "#eeeeee"]' inner-radius="20" radius="24">5/7</vanilla-donut>
+      <vanilla-donut fill='["indigo", "#eeeeee"]' inner-radius="18" radius="20">6/7</vanilla-donut>
+      <vanilla-donut fill='["violet", "#eeeeee"]' inner-radius="15" radius="16">7/7</vanilla-donut>
+    </div>`
+  )
+  .add(
+    'LitElement Pie Charts',
+    () => /* html */ `
+    <h2>Pie Charts</h2>
+
+    <div>
+      <litelement-pie>1/5</litelement-pie>
+      <litelement-pie>226/360</litelement-pie>
+      <litelement-pie>0.52/1.561</litelement-pie>
+      <litelement-pie>1,4</litelement-pie>
+      <litelement-pie>226,134</litelement-pie>
+      <litelement-pie>0.52,1.041</litelement-pie>
+      <litelement-pie>1,2,3,2,2</litelement-pie>
+    </div>`
+  )
+  .add(
+    'LitElement Donut Charts',
+    () => /* html */ `
+    <h2>Donut Charts</h2>
+
+    <div>
+      <litelement-donut>1/5</litelement-donut>
+      <litelement-donut>226/360</litelement-donut>
+      <litelement-donut>0.52/1.561</litelement-donut>
+      <litelement-donut>1,4</litelement-donut>
+      <litelement-donut>226,134</litelement-donut>
+      <litelement-donut>0.52,1.041</litelement-donut>
+      <litelement-donut>1,2,3,2,2</litelement-donut>
+    </div>`
+  )
+  .add(
+    'LitElement Line Charts',
+    () => /* html */ `
+    <h2>Line Charts</h2>
+
+    <div>
+      <litelement-line>5,3,9,6,5,9,7,3,5,2</litelement-line>
+      <litelement-line>5,3,2,-1,-3,-2,2,3,5,2</litelement-line>
+      <litelement-line>0,-3,-6,-4,-5,-4,-7,-3,-5,-2</litelement-line>
+    </div>`
+  )
+  .add(
+    'LitElement Bar Charts',
+    () => /* html */ `
+    <h2>Bar Charts</h2>
+
+    <div>
+      <litelement-bar>5,3,9,6,5,9,7,3,5,2</litelement-bar>
+      <litelement-bar>5,3,2,-1,-3,-2,2,3,5,2</litelement-bar>
+      <litelement-bar>0,-3,-6,-4,-5,-4,-7,-3,-5,-2</litelement-bar>
+    </div>`
+  )
+  .add(
+    'LitElement Attributes',
+    () => /* html */ `
+    <h2>Attributes</h2>
+
+    <div>
+      <litelement-donut fill='["red", "#eeeeee"]' inner-radius="10" radius="40">1/7</litelement-donut>
+      <litelement-donut fill='["orange", "#eeeeee"]' inner-radius="14" radius="36">2/7</litelement-donut>
+      <litelement-donut fill='["yellow", "#eeeeee"]' inner-radius="16" radius="32">3/7</litelement-donut>
+      <litelement-donut fill='["green", "#eeeeee"]' inner-radius="18" radius="28">4/7</litelement-donut>
+      <litelement-donut fill='["blue", "#eeeeee"]' inner-radius="20" radius="24">5/7</litelement-donut>
+      <litelement-donut fill='["indigo", "#eeeeee"]' inner-radius="18" radius="20">6/7</litelement-donut>
+      <litelement-donut fill='["violet", "#eeeeee"]' inner-radius="15" radius="16">7/7</litelement-donut>
     </div>`
   );

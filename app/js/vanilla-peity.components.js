@@ -415,7 +415,7 @@ class BarElement extends BaseElement {
 }
 
 // Register all of the custom elements for which we created classes.
-customElements.define('wc-pie', PieElement);
-customElements.define('wc-donut', DonutElement);
-customElements.define('wc-line', LineElement);
-customElements.define('wc-bar', BarElement);
+customElements.define('vanilla-pie', PieElement);
+customElements.define('vanilla-donut', DonutElement);
+customElements.define('vanilla-line', LineElement);
+customElements.define('vanilla-bar', BarElement);
