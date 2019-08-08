@@ -1,9 +1,9 @@
 import { storiesOf } from '@storybook/html';
 
-import '../app/js/a-simple-example.component';
-import '../app/js/a-stateful-component.component';
-import '../app/js/an-application.component';
-import '../app/js/a-component-using-external-plugins.component';
+import '../app/js/react-examples-as-lit/a-simple-example.component';
+import '../app/js/react-examples-as-lit/a-stateful-component.component';
+import '../app/js/react-examples-as-lit/an-application.component';
+import '../app/js/react-examples-as-lit/a-component-using-external-plugins.component';
 
 storiesOf('React Examples as LitElement', module)
   .add(
