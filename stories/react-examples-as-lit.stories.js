@@ -29,7 +29,8 @@ storiesOf('React Examples as LitElement', module)
         <li>The custom element is named &lt;timer-example&gt;</li>
       </ul>
 
-      <timer-example></timer-example>`
+      <timer-example></timer-example>
+      <timer-example seconds="55"></timer-example>`
   )
   .add(
     'An Application',
