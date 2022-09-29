@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "d3": "^5.9.7",
+    "d3": "^7.6.1",
     "lit-element": "^2.2.0",
     "lodash": "^4.17.15",
     "remarkable": "^2.0.0"
